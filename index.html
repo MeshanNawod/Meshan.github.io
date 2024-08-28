@@ -1,70 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <center>
-  <img id="gifImage" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="Animated GIF"> </center>
-<br>
-  <title>Will you be my Valentine?</title>
-  <style>
-    .button {
-      padding: 10px;
-      margin: 5px;
-      cursor: pointer;
-      border: none;
-      color: #fff;
-    }
 
-    #greenButton {
-      background-color: green;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    #redButton {
-      background-color: red;
-    }
+.column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+}
 
-    /* Add this style for the enlarged green button */
-    #greenButton.enlarged {
-      font-size: 16px; /* You can adjust the initial font size here */
-    }
-    
-    #gifImage {
-      width: 200px; /* Set your desired width */
-      height: auto; /* Auto-adjust height to maintain aspect ratio */
-    }
-  </style>
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+<meta charset="UTF-8" /> 
+    <meta name="viewport" 
+          content= "width=device-width, 
+                    initial-scale=1.0" /> 
+    <title>Gradient Text</title> 
+    <style> 
+        body { 
+            background: rgb(39, 39, 39); 
+        } 
+
+        h1 { 
+             
+
+            font-size: 40px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            background: linear-gradient(to right, #f32170, 
+                    #ff6b08, #cf23cf, #eedd44); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+        } 
+
+.fa { 
+
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+} 
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+</style>
 </head>
 <body>
-<h1><center>Will you be my Valentine?</center></h1>
-<center>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="Meshan2.png" alt="Meshan2" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="Meshan1.png" alt="meshan1" style="width:100%">
+  </div>
+ </div>
   
-<button class="button" id="greenButton" onclick="redirectToNewPage()">Yes</button>
-<button class="button" id="redButton" onclick="changeRedButtonLabel()">No</button>
+<h1 align="center">About me</h1>
+<center>
+<button class="button button1">Resume</button>
+<button class="button button2">Projects</button>
+<br>
+<a href="https://www.facebook.com/meshan.me" class="fa fa-facebook"></a>
+<a href="https://x.com/Meshan_Nawod" class="fa fa-twitter"></a>
+<a href="http://www.linkedin.com/in/ meshannawod" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/meshan_nawod/" class="fa fa-instagram"></a>
+<a href="https://github.com/MeshanNawod" class="fa fa-github"></a>
 </center>
-<script>
-  let redButtonLabelIndex = 0;
-  const redButtonLabels = [
-    "Are you sure?", "Really Sure??", "Are you positive???", " Plz ??",
-    "Just think about it?", "If you say no, I'll be very sad", "I'll be very very sad",
-    "I'll be very very very sad", "I'll be very very very very sad", "Ok fine, I'll stop asking...",
-    "Just kidding, PLEASE SAY YES", "I'll be very very very very very sad", "You are breaking my heart ;("
-  ];
 
-  function changeRedButtonLabel() {
-    const redButton = document.getElementById("redButton");
-    redButton.innerText = redButtonLabels[redButtonLabelIndex];
-    redButtonLabelIndex = (redButtonLabelIndex + 1) % redButtonLabels.length;
-
-    const greenButton = document.getElementById("greenButton");
-    const currentSize = parseFloat(window.getComputedStyle(greenButton).fontSize);
-    greenButton.style.fontSize = (currentSize + 10) + "px";
-  }
-
-  function redirectToNewPage() {
-    window.location.href = "yes.html";
-  }
-</script>
 
 </body>
 </html>
