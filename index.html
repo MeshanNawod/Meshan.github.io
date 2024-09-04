@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Abhina Unit - UOP</title>
+    <link rel="stylesheet" href="main.css">
+    
+<body>
+
+<!---Responsive Navigation Bar with Icons--->
+ <div class="navbar">
+  <img src="Abhina_logo_1.png" width="40px" align="right">
+  <a class="active"> Home</a> 
+  <a > Events and Fundraisers</a> 
+  <a > Contact</a> 
+  <a class="tablinks"> About</a>
+ </div>
+
+<!---Responsive Navigation Bar with Icons end--->
+<h1 align="center">Abhina Unit of University of Peradeniya</h1>
+<img src="Abhina_logo_1.png" class="logo_image">
+
+<!---Automatic Slideshow--->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Slide1.jpg" style="width:100%">
+  <div class="text">🎭"ස්වරාභින වසන්තය "🎭</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="Slide2.jpg" style="width:100%">
+  <div class="text">🎭"ස්වරාභින වසන්තය "🎭</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="Slide3.jpg" style="width:100%">
+  <div class="text">🎭"ස්වරාභින වසන්තය "🎭</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Slide4.jpg" style="width:100%">
+  <div class="text">Battle of Freshers 2023</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+</div>
+
+<div class="parallax"></div>
+<div style="height:auto;background-color:#fced20;">
+  <center>
+  <h2>Our purpose is to...</h2>
+  <p>To connect students who are passionate about drama and theatre.</p>
+  <p>To create a network of actors, directors, playwrights, and drama enthusiasts.</p>
+  <p>To enhance interest, understanding, and research in the field of drama and theatre.</p>
+  <p>To disseminate knowledge about drama and theatre among its members and the wider community.</p>
+  <p>To develop leadership, teamwork, and other soft skills through drama activities.</p>
+  <p>To organize lectures, seminars, workshops, and other related activities for members and other interested parties to introduce contemporary drama.</p>
+  <p>To publish magazines and articles that promote interest in drama and theatre.</p>
+  <p>To promote and assist the exchange of information related to drama and theatre among its members and other interested individuals via the website.</p><br>
+</center>
+  </div>
+
+ <div style="height:auto;background-color:#9d1c21;">
+  <!---Responsive Iframe--->
+  <div class="Iframe">
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dvipzG03sn8?si=gqSDpPD2vPto599O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+ </div>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active1", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active1";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>
